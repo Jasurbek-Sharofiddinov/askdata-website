@@ -20,14 +20,21 @@
                 <span class="logo-text">ASKDATA</span>
             </a>
             <div class="nav-menu" id="navMenu">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#how-it-works" class="nav-link">How It Works</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#features" class="nav-link" data-i18n="nav.features">Features</a>
+                <a href="#how-it-works" class="nav-link" data-i18n="nav.howItWorks">How It Works</a>
+                <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+                <a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">Testimonials</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
             </div>
             <div class="nav-actions">
-                <a href="#" class="btn-secondary">Log In</a>
-                <a href="#" class="btn-primary">Start Free Trial</a>
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="uz">UZ</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                </div>
+                <a href="#" class="btn-secondary" data-i18n="nav.login">Log In</a>
+                <a href="#" class="btn-primary" data-i18n="nav.trial">Start Free Trial</a>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <span></span>
@@ -49,19 +56,19 @@
             <div class="hero-content">
                 <div class="badge">
                     <span class="badge-dot"></span>
-                    AI-Powered Analytics Platform
+                    <span data-i18n="hero.badge">AI-Powered Analytics Platform</span>
                 </div>
                 <h1 class="hero-title">
-                    Turn Your Data Into
-                    <span class="gradient-text">Actionable Stories</span>
+                    <span data-i18n="hero.titleLine1">Turn Your Data Into</span>
+                    <span class="gradient-text" data-i18n="hero.titleLine2">Actionable Stories</span>
                 </h1>
-                <p class="hero-subtitle">
-                    Ask questions in plain English. Get instant insights, beautiful visualizations,
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Ask questions in plain language. Get instant insights, beautiful visualizations,
                     and clear recommendations. No SQL, no complexity, no data team required.
                 </p>
                 <div class="hero-cta">
                     <a href="#" class="btn-primary btn-large">
-                        <span>Get Started Free</span>
+                        <span data-i18n="hero.cta">Get Started Free</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -71,23 +78,23 @@
                             <circle cx="12" cy="12" r="10"/>
                             <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
                         </svg>
-                        <span>Watch Demo</span>
+                        <span data-i18n="hero.demo">Watch Demo</span>
                     </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">5 min</span>
-                        <span class="stat-label">Setup time</span>
+                        <span class="stat-label" data-i18n="hero.stat1">Setup time</span>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat">
                         <span class="stat-number">150+</span>
-                        <span class="stat-label">Data integrations</span>
+                        <span class="stat-label" data-i18n="hero.stat2">Data integrations</span>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat">
                         <span class="stat-number">10x</span>
-                        <span class="stat-label">Faster insights</span>
+                        <span class="stat-label" data-i18n="hero.stat3">Faster insights</span>
                     </div>
                 </div>
             </div>
@@ -100,98 +107,116 @@
                         <span class="preview-title">AskData Dashboard</span>
                     </div>
                     <div class="preview-content">
-                        <div class="chat-interface">
-                            <div class="chat-message user">
-                                <span class="chat-avatar user-avatar">You</span>
-                                <div class="chat-bubble">What were my top performing products last month?</div>
-                            </div>
-                            <div class="chat-message ai">
-                                <span class="chat-avatar ai-avatar">AI</span>
-                                <div class="chat-bubble">
-                                    <p>Here's your top 5 products for November:</p>
-                                    <div class="mini-chart">
-                                        <div class="chart-bar" style="--height: 95%"><span>Pro Plan</span></div>
-                                        <div class="chart-bar" style="--height: 78%"><span>Starter</span></div>
-                                        <div class="chart-bar" style="--height: 65%"><span>Enterprise</span></div>
-                                        <div class="chart-bar" style="--height: 45%"><span>Add-ons</span></div>
-                                        <div class="chart-bar" style="--height: 32%"><span>Support</span></div>
-                                    </div>
-                                    <p class="insight-text">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M23 6l-9.5 9.5-5-5L1 18"/>
-                                            <path d="M17 6h6v6"/>
-                                        </svg>
-                                        Pro Plan revenue increased 23% vs October
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="chat-interface" id="chatDemo">
+                            <!-- Animated chat will be inserted here by JS -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="trusted-by">
-            <p>Trusted by innovative companies worldwide</p>
-            <div class="logo-strip">
-                <div class="company-logo">TechStart</div>
-                <div class="company-logo">GrowthCo</div>
-                <div class="company-logo">DataDriven</div>
-                <div class="company-logo">ScaleUp</div>
-                <div class="company-logo">InnovateLab</div>
-            </div>
-        </div>
     </section>
 
-    <!-- Problem Section -->
+    <!-- Problem Section - Redesigned -->
     <section class="problem-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">The Problem</span>
-                <h2>Your Data Is Powerful. <br><span class="gradient-text">But It's Locked Away.</span></h2>
-                <p>Most SMBs have valuable data scattered across multiple platforms. Getting insights shouldn't require a data scientist.</p>
+                <span class="section-tag" data-i18n="problem.tag">The Challenge</span>
+                <h2><span data-i18n="problem.title1">Your Data Is Powerful.</span> <br><span class="gradient-text" data-i18n="problem.title2">But It's Trapped.</span></h2>
+                <p data-i18n="problem.subtitle">SMEs have valuable data scattered across platforms. Unlocking insights shouldn't require a data scientist or expensive tools.</p>
             </div>
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                        </svg>
+
+            <!-- Visual Problem Flow -->
+            <div class="problem-visual">
+                <div class="problem-flow">
+                    <!-- Current State -->
+                    <div class="problem-state current">
+                        <div class="state-label" data-i18n="problem.now">NOW</div>
+                        <div class="state-icon chaos">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="20" cy="30" r="8" fill="var(--accent-purple)" opacity="0.7"/>
+                                <circle cx="50" cy="20" r="6" fill="var(--accent-cyan)" opacity="0.7"/>
+                                <circle cx="80" cy="35" r="7" fill="var(--accent-magenta)" opacity="0.7"/>
+                                <circle cx="30" cy="70" r="9" fill="var(--accent-blue)" opacity="0.7"/>
+                                <circle cx="70" cy="75" r="5" fill="var(--accent-teal)" opacity="0.7"/>
+                                <circle cx="55" cy="55" r="10" fill="var(--accent-purple)" opacity="0.5"/>
+                                <!-- Confusion lines -->
+                                <path d="M20 30 Q35 50 50 20" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+                                <path d="M50 20 Q70 40 80 35" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+                                <path d="M30 70 Q50 60 70 75" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="problem.nowTitle">Scattered & Confusing</h3>
+                        <p data-i18n="problem.nowDesc">Data in 5+ tools, hours wasted, decisions delayed</p>
                     </div>
-                    <h3>Technical Complexity</h3>
-                    <p>Traditional BI tools require SQL, coding, or weeks of training. Only 25% of employees can use them effectively.</p>
+
+                    <!-- Arrow -->
+                    <div class="problem-arrow">
+                        <div class="arrow-line"></div>
+                        <div class="arrow-label">
+                            <img src="assets/logo.svg" alt="AskData" class="arrow-logo">
+                        </div>
+                        <div class="arrow-head">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#arrowGradient)" stroke-width="2">
+                                <defs>
+                                    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#00d4ff"/>
+                                        <stop offset="100%" style="stop-color:#7c3aed"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Future State -->
+                    <div class="problem-state future">
+                        <div class="state-label" data-i18n="problem.with">WITH ASKDATA</div>
+                        <div class="state-icon clarity">
+                            <svg viewBox="0 0 100 100">
+                                <!-- Central organized dashboard -->
+                                <rect x="15" y="15" width="70" height="70" rx="8" fill="rgba(0,212,255,0.1)" stroke="var(--accent-cyan)" stroke-width="2"/>
+                                <rect x="20" y="22" width="25" height="18" rx="3" fill="var(--accent-purple)" opacity="0.8"/>
+                                <rect x="50" y="22" width="30" height="18" rx="3" fill="var(--accent-cyan)" opacity="0.8"/>
+                                <rect x="20" y="45" width="60" height="12" rx="3" fill="var(--accent-teal)" opacity="0.6"/>
+                                <rect x="20" y="62" width="20" height="18" rx="3" fill="var(--accent-magenta)" opacity="0.7"/>
+                                <rect x="45" y="62" width="35" height="18" rx="3" fill="var(--accent-blue)" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="problem.withTitle">Clear & Actionable</h3>
+                        <p data-i18n="problem.withDesc">One platform, instant answers, confident decisions</p>
+                    </div>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="7" height="7"/>
-                            <rect x="14" y="3" width="7" height="7"/>
-                            <rect x="14" y="14" width="7" height="7"/>
-                            <rect x="3" y="14" width="7" height="7"/>
-                        </svg>
+            </div>
+
+            <!-- Pain Points -->
+            <div class="pain-points">
+                <div class="pain-point">
+                    <div class="pain-number">01</div>
+                    <div class="pain-content">
+                        <h4 data-i18n="problem.pain1Title">Technical Barriers</h4>
+                        <p data-i18n="problem.pain1Desc">SQL and BI tools require expertise. Only 25% of your team can access insights.</p>
                     </div>
-                    <h3>Data Fragmentation</h3>
-                    <p>Your data lives in Google Analytics, spreadsheets, CRM, and accounting software. Connecting them is a nightmare.</p>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
+                <div class="pain-point">
+                    <div class="pain-number">02</div>
+                    <div class="pain-content">
+                        <h4 data-i18n="problem.pain2Title">Data Silos</h4>
+                        <p data-i18n="problem.pain2Desc">Analytics, CRM, spreadsheets, accounting - your data lives in different worlds.</p>
                     </div>
-                    <h3>Time Constraints</h3>
-                    <p>You're wearing multiple hats. You need answers in minutes, not hours of dashboard exploration.</p>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
-                            <path d="M12 2a10 10 0 0 1 10 10"/>
-                            <path d="M12 12l8-8"/>
-                        </svg>
+                <div class="pain-point">
+                    <div class="pain-number">03</div>
+                    <div class="pain-content">
+                        <h4 data-i18n="problem.pain3Title">Time Drain</h4>
+                        <p data-i18n="problem.pain3Desc">Hours spent creating reports instead of running your business.</p>
                     </div>
-                    <h3>Interpretation Gap</h3>
-                    <p>Dashboards show numbers, but understanding why they changed and what to do next requires expertise you don't have.</p>
+                </div>
+                <div class="pain-point">
+                    <div class="pain-number">04</div>
+                    <div class="pain-content">
+                        <h4 data-i18n="problem.pain4Title">No "So What?"</h4>
+                        <p data-i18n="problem.pain4Desc">Charts show numbers, but what do they mean? What should you do next?</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,9 +226,9 @@
     <section class="features-section" id="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Features</span>
-                <h2>Everything You Need to <br><span class="gradient-text">Understand Your Data</span></h2>
-                <p>Powerful features designed for business owners, not data scientists.</p>
+                <span class="section-tag" data-i18n="features.tag">Features</span>
+                <h2><span data-i18n="features.title1">Everything You Need to</span> <br><span class="gradient-text" data-i18n="features.title2">Understand Your Data</span></h2>
+                <p data-i18n="features.subtitle">Powerful features designed for business owners, not data scientists.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card featured">
@@ -212,21 +237,21 @@
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                         </svg>
                     </div>
-                    <span class="feature-tag">Core Feature</span>
-                    <h3>Conversational Analytics</h3>
-                    <p>Ask questions in plain English. "What were my sales last week?" "Why did traffic drop?" Get instant, accurate answers with beautiful visualizations.</p>
+                    <span class="feature-tag" data-i18n="features.coreFeature">Core Feature</span>
+                    <h3 data-i18n="features.conversationalTitle">Conversational Analytics</h3>
+                    <p data-i18n="features.conversationalDesc">Ask questions in plain language. "What were my sales last week?" "Why did traffic drop?" Get instant, accurate answers with beautiful visualizations.</p>
                     <ul class="feature-list">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Natural language queries
+                            <span data-i18n="features.conversationalItem1">Natural language queries</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Follow-up questions support
+                            <span data-i18n="features.conversationalItem2">Follow-up questions support</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Multi-language support
+                            <span data-i18n="features.conversationalItem3">Multi-language support</span>
                         </li>
                     </ul>
                 </div>
@@ -236,8 +261,8 @@
                             <path d="M18 20V10M12 20V4M6 20v-6"/>
                         </svg>
                     </div>
-                    <h3>Auto Visualizations</h3>
-                    <p>AI automatically selects the best chart type for your data. Beautiful, insightful, and export-ready.</p>
+                    <h3 data-i18n="features.visualTitle">Auto Visualizations</h3>
+                    <p data-i18n="features.visualDesc">AI automatically selects the best chart type for your data. Beautiful, insightful, and export-ready.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -248,8 +273,8 @@
                             <line x1="16" y1="17" x2="8" y2="17"/>
                         </svg>
                     </div>
-                    <h3>Narrative Reports</h3>
-                    <p>Get story-driven reports that explain the 'why' behind your numbers. Perfect for stakeholder presentations.</p>
+                    <h3 data-i18n="features.narrativeTitle">Narrative Reports</h3>
+                    <p data-i18n="features.narrativeDesc">Get story-driven reports that explain the 'why' behind your numbers. Perfect for stakeholder presentations.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -258,8 +283,8 @@
                             <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
                     </div>
-                    <h3>Proactive Insights</h3>
-                    <p>Don't wait to discover problems. Get automatic alerts when something unusual happens in your data.</p>
+                    <h3 data-i18n="features.proactiveTitle">Proactive Insights</h3>
+                    <p data-i18n="features.proactiveDesc">Don't wait to discover problems. Get automatic alerts when something unusual happens in your data.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -268,8 +293,8 @@
                             <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
                         </svg>
                     </div>
-                    <h3>Action Recommendations</h3>
-                    <p>Don't just know what happened—know what to do. Get AI-powered suggestions tailored to your business.</p>
+                    <h3 data-i18n="features.actionTitle">Action Recommendations</h3>
+                    <p data-i18n="features.actionDesc">Don't just know what happened—know what to do. Get AI-powered suggestions tailored to your business.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -279,8 +304,8 @@
                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
                         </svg>
                     </div>
-                    <h3>One-Click Integrations</h3>
-                    <p>Connect Google Analytics, Yandex Metrica, spreadsheets, and databases in seconds. No technical setup.</p>
+                    <h3 data-i18n="features.integrationTitle">One-Click Integrations</h3>
+                    <p data-i18n="features.integrationDesc">Connect Google Analytics, Yandex Metrica, spreadsheets, and databases in seconds. No technical setup.</p>
                 </div>
             </div>
         </div>
@@ -290,15 +315,15 @@
     <section class="how-it-works" id="how-it-works">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">How It Works</span>
-                <h2>From Data to Decisions <br><span class="gradient-text">In Three Steps</span></h2>
+                <span class="section-tag" data-i18n="howItWorks.tag">How It Works</span>
+                <h2><span data-i18n="howItWorks.title1">From Data to Decisions</span> <br><span class="gradient-text" data-i18n="howItWorks.title2">In Three Steps</span></h2>
             </div>
             <div class="steps-container">
                 <div class="step">
                     <div class="step-number">01</div>
                     <div class="step-content">
-                        <h3>Connect Your Data</h3>
-                        <p>Link your Google Analytics, spreadsheets, or databases with one click. We support 150+ data sources including Yandex Metrica.</p>
+                        <h3 data-i18n="howItWorks.step1Title">Connect Your Data</h3>
+                        <p data-i18n="howItWorks.step1Desc">Link your Google Analytics, spreadsheets, or databases with one click. We support 150+ data sources including Yandex Metrica.</p>
                         <div class="step-visual">
                             <div class="integration-icons">
                                 <div class="int-icon ga">GA4</div>
@@ -323,13 +348,13 @@
                 <div class="step">
                     <div class="step-number">02</div>
                     <div class="step-content">
-                        <h3>Ask Questions</h3>
-                        <p>Type your questions in plain English. "What's my best traffic source?" "How did sales change this month?" No SQL or formulas needed.</p>
+                        <h3 data-i18n="howItWorks.step2Title">Ask Questions</h3>
+                        <p data-i18n="howItWorks.step2Desc">Type your questions in plain language. "What's my best traffic source?" "How did sales change this month?" No SQL or formulas needed.</p>
                         <div class="step-visual">
                             <div class="question-examples">
-                                <span class="q-chip">"Why did bounce rate increase?"</span>
-                                <span class="q-chip">"Top 5 customers by revenue"</span>
-                                <span class="q-chip">"Compare Q3 vs Q4 sales"</span>
+                                <span class="q-chip" data-i18n="howItWorks.q1">"Why did bounce rate increase?"</span>
+                                <span class="q-chip" data-i18n="howItWorks.q2">"Top 5 customers by revenue"</span>
+                                <span class="q-chip" data-i18n="howItWorks.q3">"Compare Q3 vs Q4 sales"</span>
                             </div>
                         </div>
                     </div>
@@ -342,17 +367,17 @@
                 <div class="step">
                     <div class="step-number">03</div>
                     <div class="step-content">
-                        <h3>Get Insights & Act</h3>
-                        <p>Receive clear answers with visualizations, narrative explanations, and actionable recommendations. Export to PDF or share with your team.</p>
+                        <h3 data-i18n="howItWorks.step3Title">Get Insights & Act</h3>
+                        <p data-i18n="howItWorks.step3Desc">Receive clear answers with visualizations, narrative explanations, and actionable recommendations. Export to PDF or share with your team.</p>
                         <div class="step-visual">
                             <div class="insight-preview">
                                 <div class="insight-card-mini">
                                     <span class="insight-trend up">+23%</span>
-                                    <span class="insight-label">Revenue Growth</span>
+                                    <span class="insight-label" data-i18n="howItWorks.revenueGrowth">Revenue Growth</span>
                                 </div>
                                 <div class="insight-card-mini">
                                     <span class="insight-trend neutral">!</span>
-                                    <span class="insight-label">Action Needed</span>
+                                    <span class="insight-label" data-i18n="howItWorks.actionNeeded">Action Needed</span>
                                 </div>
                             </div>
                         </div>
@@ -366,9 +391,9 @@
     <section class="integrations-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Integrations</span>
-                <h2>Connect All Your <span class="gradient-text">Data Sources</span></h2>
-                <p>One platform for all your business data. No more switching between tools.</p>
+                <span class="section-tag" data-i18n="integrations.tag">Integrations</span>
+                <h2><span data-i18n="integrations.title1">Connect All Your</span> <span class="gradient-text" data-i18n="integrations.title2">Data Sources</span></h2>
+                <p data-i18n="integrations.subtitle">One platform for all your business data. No more switching between tools.</p>
             </div>
             <div class="integrations-grid">
                 <div class="integration-card">
@@ -421,160 +446,172 @@
                 </div>
                 <div class="integration-card more-integrations">
                     <span class="more-count">+143</span>
-                    <span>More Integrations</span>
+                    <span data-i18n="integrations.more">More Integrations</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing Section - Updated prices for SME value -->
     <section class="pricing-section" id="pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Pricing</span>
-                <h2>Simple, Transparent <span class="gradient-text">Pricing</span></h2>
-                <p>Start free, upgrade when you're ready. No hidden fees.</p>
+                <span class="section-tag" data-i18n="pricing.tag">Pricing</span>
+                <h2><span data-i18n="pricing.title1">Investment That</span> <span class="gradient-text" data-i18n="pricing.title2">Pays for Itself</span></h2>
+                <p data-i18n="pricing.subtitle">Transform how your business makes decisions. Start with a free trial.</p>
             </div>
             <div class="pricing-toggle">
-                <span class="toggle-label active">Monthly</span>
+                <span class="toggle-label active" data-i18n="pricing.monthly">Monthly</span>
                 <button class="toggle-switch" id="pricingToggle">
                     <span class="toggle-slider"></span>
                 </button>
-                <span class="toggle-label">Yearly <span class="save-badge">Save 20%</span></span>
+                <span class="toggle-label"><span data-i18n="pricing.yearly">Yearly</span> <span class="save-badge" data-i18n="pricing.save">Save 20%</span></span>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Free</h3>
-                        <p class="pricing-desc">Perfect for getting started</p>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">0</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            1 data source
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            50 questions/month
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Basic visualizations
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Community support
-                        </li>
-                    </ul>
-                    <a href="#" class="btn-outline btn-block">Get Started</a>
-                </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Starter</h3>
-                        <p class="pricing-desc">For growing businesses</p>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount" data-monthly="19" data-yearly="15">19</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            3 data sources
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Unlimited questions
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Automated weekly reports
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            PDF export
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Email support
-                        </li>
-                    </ul>
-                    <a href="#" class="btn-primary btn-block">Start Free Trial</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Pro</h3>
-                        <p class="pricing-desc">For power users</p>
+                        <h3 data-i18n="pricing.starterName">Starter</h3>
+                        <p class="pricing-desc" data-i18n="pricing.starterDesc">For small businesses getting started</p>
                         <div class="price">
                             <span class="currency">$</span>
                             <span class="amount" data-monthly="49" data-yearly="39">49</span>
-                            <span class="period">/month</span>
+                            <span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
                     </div>
                     <ul class="pricing-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            10 data sources
+                            <span data-i18n="pricing.starterF1">3 data sources</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Database connections
+                            <span data-i18n="pricing.starterF2">500 questions/month</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Custom report templates
+                            <span data-i18n="pricing.starterF3">Basic visualizations</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Team sharing (5 users)
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Priority support
+                            <span data-i18n="pricing.starterF4">Email support</span>
                         </li>
                     </ul>
-                    <a href="#" class="btn-outline btn-block">Start Free Trial</a>
+                    <a href="#" class="btn-outline btn-block" data-i18n="pricing.startTrial">Start Free Trial</a>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card popular">
+                    <div class="popular-badge" data-i18n="pricing.popular">Most Popular</div>
                     <div class="pricing-header">
-                        <h3>Business</h3>
-                        <p class="pricing-desc">For teams & agencies</p>
+                        <h3 data-i18n="pricing.growthName">Growth</h3>
+                        <p class="pricing-desc" data-i18n="pricing.growthDesc">For growing SMEs ready to scale</p>
                         <div class="price">
                             <span class="currency">$</span>
                             <span class="amount" data-monthly="149" data-yearly="119">149</span>
-                            <span class="period">/month</span>
+                            <span class="period" data-i18n="pricing.perMonth">/month</span>
                         </div>
                     </div>
                     <ul class="pricing-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Unlimited data sources
+                            <span data-i18n="pricing.growthF1">10 data sources</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            White-label reports
+                            <span data-i18n="pricing.growthF2">Unlimited questions</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            API access
+                            <span data-i18n="pricing.growthF3">Automated weekly reports</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Unlimited team members
+                            <span data-i18n="pricing.growthF4">Custom dashboards</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Dedicated support
+                            <span data-i18n="pricing.growthF5">Team sharing (5 users)</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.growthF6">Priority support</span>
                         </li>
                     </ul>
-                    <a href="#" class="btn-outline btn-block">Contact Sales</a>
+                    <a href="#" class="btn-primary btn-block" data-i18n="pricing.startTrial">Start Free Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing.proName">Professional</h3>
+                        <p class="pricing-desc" data-i18n="pricing.proDesc">For data-driven organizations</p>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="299" data-yearly="239">299</span>
+                            <span class="period" data-i18n="pricing.perMonth">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.proF1">25 data sources</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.proF2">Database connections</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.proF3">Custom report templates</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.proF4">API access</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.proF5">Team sharing (15 users)</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.proF6">Dedicated account manager</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-outline btn-block" data-i18n="pricing.startTrial">Start Free Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing.enterpriseName">Enterprise</h3>
+                        <p class="pricing-desc" data-i18n="pricing.enterpriseDesc">For large organizations</p>
+                        <div class="price">
+                            <span class="currency"></span>
+                            <span class="amount" data-i18n="pricing.custom">Custom</span>
+                            <span class="period"></span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.enterpriseF1">Unlimited data sources</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.enterpriseF2">White-label reports</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.enterpriseF3">Custom integrations</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.enterpriseF4">Unlimited team members</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.enterpriseF5">On-premise deployment</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-i18n="pricing.enterpriseF6">24/7 dedicated support</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-outline btn-block" data-i18n="pricing.contactSales">Contact Sales</a>
                 </div>
             </div>
         </div>
@@ -584,9 +621,9 @@
     <section class="testimonials-section" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Testimonials</span>
-                <h2>Loved by <span class="gradient-text">Business Owners</span></h2>
-                <p>See what our customers are saying about AskData.</p>
+                <span class="section-tag" data-i18n="testimonials.tag">Testimonials</span>
+                <h2><span data-i18n="testimonials.title1">Loved by</span> <span class="gradient-text" data-i18n="testimonials.title2">Business Owners</span></h2>
+                <p data-i18n="testimonials.subtitle">See what our customers are saying about AskData.</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -597,12 +634,12 @@
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"Finally, I can understand my data without bothering my developer. AskData gives me the insights I need to make decisions, explained in plain English."</p>
+                    <p class="testimonial-text" data-i18n="testimonials.quote1">"Finally, I can understand my data without bothering my developer. AskData gives me the insights I need to make decisions, explained in plain language."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">MK</div>
                         <div class="author-info">
                             <span class="author-name">Maria Kozlova</span>
-                            <span class="author-role">E-commerce Owner</span>
+                            <span class="author-role" data-i18n="testimonials.role1">E-commerce Owner</span>
                         </div>
                     </div>
                 </div>
@@ -614,12 +651,12 @@
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"The weekly reports save me hours. I used to dread pulling together numbers for our team meetings. Now it's automated and actually tells me what matters."</p>
+                    <p class="testimonial-text" data-i18n="testimonials.quote2">"The weekly reports save me hours. I used to dread pulling together numbers for our team meetings. Now it's automated and actually tells me what matters."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">AJ</div>
                         <div class="author-info">
                             <span class="author-name">Alex Johnson</span>
-                            <span class="author-role">Marketing Director</span>
+                            <span class="author-role" data-i18n="testimonials.role2">Marketing Director</span>
                         </div>
                     </div>
                 </div>
@@ -631,12 +668,12 @@
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"Connecting our Yandex Metrica was seamless. We operate in multiple markets and AskData handles all our analytics sources beautifully."</p>
+                    <p class="testimonial-text" data-i18n="testimonials.quote3">"Connecting our Yandex Metrica was seamless. We operate in multiple markets and AskData handles all our analytics sources beautifully."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">DN</div>
                         <div class="author-info">
                             <span class="author-name">Dmitri Novak</span>
-                            <span class="author-role">SaaS Founder</span>
+                            <span class="author-role" data-i18n="testimonials.role3">SaaS Founder</span>
                         </div>
                     </div>
                 </div>
@@ -652,16 +689,57 @@
         </div>
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Unlock Your Data's Potential?</h2>
-                <p>Join thousands of business owners who've stopped guessing and started knowing. Get your first insights in under 5 minutes.</p>
+                <h2 data-i18n="cta.title">Ready to Unlock Your Data's Potential?</h2>
+                <p data-i18n="cta.subtitle">Join business owners who've stopped guessing and started knowing. Get your first insights in under 5 minutes.</p>
                 <div class="cta-actions">
                     <a href="#" class="btn-primary btn-large">
-                        <span>Start Free Trial</span>
+                        <span data-i18n="cta.button">Start Free Trial</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
-                    <span class="cta-note">No credit card required</span>
+                    <span class="cta-note" data-i18n="cta.note">No credit card required</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact.tag">Contact Us</span>
+                <h2><span data-i18n="contact.title1">Let's Talk About</span> <span class="gradient-text" data-i18n="contact.title2">Your Data</span></h2>
+                <p data-i18n="contact.subtitle">Have questions? We'd love to hear from you. Reach out through any channel.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="contact.phoneTitle">Phone</h3>
+                    <a href="tel:+998999948959" class="contact-link">+998 99 994 89 59</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </div>
+                    <h3>Telegram</h3>
+                    <a href="https://t.me/jasurbeksharofiddinov" target="_blank" class="contact-link">@jasurbeksharofiddinov</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="contact.emailTitle">Email</h3>
+                    <a href="mailto:jasurbeksharofiddinov62@gmail.com" class="contact-link">jasurbeksharofiddinov62@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -676,53 +754,53 @@
                         <img src="assets/logo.svg" alt="AskData" class="logo-img">
                         <span class="logo-text">ASKDATA</span>
                     </a>
-                    <p>Turn your business data into actionable stories with AI-powered analytics.</p>
+                    <p data-i18n="footer.description">Turn your business data into actionable stories with AI-powered analytics.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        <a href="https://t.me/jasurbeksharofiddinov" target="_blank" class="social-link" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
                         </a>
                         <a href="#" class="social-link" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        <a href="mailto:jasurbeksharofiddinov62@gmail.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </a>
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Product</h4>
+                    <h4 data-i18n="footer.product">Product</h4>
                     <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#">Integrations</a></li>
-                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="#" data-i18n="footer.integrations">Integrations</a></li>
+                        <li><a href="#" data-i18n="footer.changelog">Changelog</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Resources</h4>
+                    <h4 data-i18n="footer.resources">Resources</h4>
                     <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#" data-i18n="footer.documentation">Documentation</a></li>
+                        <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+                        <li><a href="#" data-i18n="footer.helpCenter">Help Center</a></li>
+                        <li><a href="#" data-i18n="footer.api">API Reference</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Company</h4>
+                    <h4 data-i18n="footer.company">Company</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.about">About Us</a></li>
+                        <li><a href="#" data-i18n="footer.careers">Careers</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 AskData. All rights reserved.</p>
+                <p>&copy; 2024 AskData. <span data-i18n="footer.rights">All rights reserved.</span></p>
                 <div class="footer-legal">
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Cookie Policy</a>
+                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footer.cookies">Cookie Policy</a>
                 </div>
             </div>
         </div>
